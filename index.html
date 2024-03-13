@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="sidebar">
+
+            <button class="add-size-input">Set Resolution</button>
+
+            <div class="set-resolution-container"></div>
+            <div class="keys">
+                <h5>Press <span class="p-key"></span> for Pencil</h5>
+                <h5>Press <span class="e-key"></span> for Eraser</h5>
+                <h5>Press <span class="n-key"></span> for Inspector</h5>
+            </div>
+
+            <p class="current-tool">Current Tool:<span class="tool-icon"></span></p>
+        </div>
+
+        <div class="main">
+            <h3 class="message">Press "p" to start drawing.</h3>
+            <div class="grid"></div>
+            <input type="range" name="eraser-slider" id="eraser-slider" min="0" value="0" step="1">
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

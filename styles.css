@@ -1,0 +1,164 @@
+body {
+    box-sizing: border-box;
+    font-family: "Ubuntu", Roboto, sans-serif;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f2f2f2 0%, #dddddd 51%, #f2f2f2 79%, #f2f2f2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 80vw;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 4vw;
+    flex: 1 1 30%;
+    margin-top: 6vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 70%;
+}
+
+.keys {
+    margin-left: 2.5vw;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    height: 40vw;
+    border: 0.001vw solid darkslategray;
+    border-bottom: none;
+    border-right: none;
+}
+
+.set-resolution-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vh;
+    flex-shrink: 1;
+}
+
+button {
+    font-family: inherit;
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+button:hover {
+    background-color: #0056b3;
+}
+  
+button:active {
+    background-color: #0056b3;
+}
+  
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+
+.container .pixel-container {
+    box-sizing: border-box;
+    border-right: 0.001vw solid black;
+    border-bottom: 0.001vw solid black;
+    transition: background-color 0.3s ease;
+}
+
+.last-column {
+    border-right: black;
+}
+
+.last-row {
+    border-bottom: 1px solid black;
+}
+
+.hovered {
+    background-color: black;
+}
+
+#size-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    outline: none;
+    font-family: inherit;
+    width: 80px;
+    flex-shrink: 1;
+}
+
+#size-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.tool-icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}
+
+.current-tool {
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+}
+
+#eraser-slider {
+    margin: 2vh 0 3vh 0;
+}
+
+.p-key {
+    background: url('./p-key.png') no-repeat center center;
+}
+
+.e-key {
+    background: url('./e-key.png') no-repeat center center;
+}
+
+.n-key {
+    background: url('./n-key.png') no-repeat center center;
+}
+
+h5 > span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 1em;
+}
